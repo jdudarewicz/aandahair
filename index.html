@@ -3,16 +3,17 @@
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/montserrat.css">
     <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
-    <section class="main-display">
+    <section class="main-display section-outer section-inner-restrict">
         <div class="main-display__text-container main-display__container">
             <h1 id="main-title" class="mt-4">A & A Hair Salon</h1>
             <h3 id="subtitle" class="mt-4">A & A Hair Salon features two <span class="b">dedicated and passionate stylists. We are willing to transform your hair into a healthy and manageable style.</h3>
         </div>
         <!--Desktop, view of 8 selected images -->
-        <div class="main-display__images main-display__container">
+        <div class="main-display__images main-display__container main-display__desktop">
             <div class="main-display__images-col">
                 <img class="main-display__img" src="img/AandAHair-2185-crop.jpg" alt=""/>
                 <img class="main-display__img" src="img/AandAHair-2053-crop.jpg" alt=""/>
@@ -26,27 +27,192 @@
                 <img class="main-display__img" src="img/AandAHair-2241-crop.jpg" alt=""/>
             </div>
         </div>
-        <!--Mobile, view of carousel of selected images (not implemented yet) -->
+        <!--Mobile, view of 4 selected images -->
+        <div class="main-display__images main-display__container main-display__mobile">
+            <div class="main-display__images-col">
+                <img class="main-display__img" src="img/AandAHair-2185-crop.jpg" alt=""/>
+                <img class="main-display__img" src="img/AandAHair-2053-crop.jpg" alt=""/>
+            </div>
+            <div class="main-display__images-col">
+                <img class="main-display__img" src="img/AandAHair-2217-crop.jpg" alt=""/>
+                <img class="main-display__img" src="img/AandAHair-2060-crop.jpg" alt=""/>
+            </div>
+        </div>
         <div class="main-display__skip-section main-display__container">
             <img id="down-arrow" src="img/angle-arrow-down.png" />
         </div>
     </section>
-    <section class="about-us">
-        <h3 class="section-heading">About Us</h3>
-    </section>
-    <section class="prices">
-        <h3 class="section-heading">Prices</h3>
-    </section>
-    <section class="book-with-us">
-        <h3 class="section-heading">Book With Us</h3>
+
+
+    <section id="jump-here" class="about-us section-margin">
+        <div class="about-us__inner section-inner-restrict">
+            <h3 id="about-us-heading" class="section-heading section-heading-bottom-margin-small-mobile">About Us</h3>
+            <div class="row mt-4">
+                <div class="col-12">
+                    <img class="about-us__image" src="img/AandAHair-2161.jpg"/>
+                </div>
+            </div>
+            <div class="row inner-section-top-margin inner-section-top-margin-small-mobile">
+                <div class="col-12 col-md-6">
+                    <h5 class="about-us__name inner-subtitle inner-section-top-margin-mobile">Anna Dudarewicz</h5>
+                    <p class="pt-4">Anna has been working in the industry for 24 years. She trained in Europe, specifically,  Poland and Germany. She founded three successful salons since coming to Canada.</p>
+                    <p>Anna has trained with some of the industries finest. She continues her education constantly, making sure that she stays current with techniques and trends.</p>
+                </div>
+                <div class="col-12 col-md-6 inner-section-top-margin-mobile">
+                    <h5 class="about-us__name inner-subtitle">Alexa Dudarewicz</h5>
+                    <p class="pt-4">Alexa is a graduate from the Fiorio Beauty Academy. She trained among major names in the industry. Since graduating, Alexa has attended several courses including, but not limited to, advanced cutting, makeup, and barbering.</p>
+                    <p>Alexa is a colour correction specialist, and strives to help you achieve your colour goals. She continues her education, staying current with products and trends to better address your needs. </p>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <section class="footer">
+
+    <section class="prices section-margin">
+        <div class="prices__inner section-inner-restrict">
+            <h3 class="section-heading section-heading-bottom-margin-small-mobile">Prices</h3>
+            <div class="row mt-4">
+                <div class="col-12 col-md-6">
+                    <div class="prices__table-section">
+                        <h4 class="prices__table-title inner-subtitle">Hair Cuts</h4>
+                        <p class="prices__title-sub">Includes wash & style</p>
+                        <div class="table-responsive">
+                            <table class="prices__table table">
+                                <tr><td class="prices__left-table-element">Women's Short</td><td>$35 + tax & up</td></tr>
+                                <tr><td class="prices__left-table-element">Women's Medium</td><td>$40 + tax & up</td></tr>
+                                <tr><td class="prices__left-table-element">Women's Long</td><td>$45 + tax & up</td></tr>
+                                <tr><td class="prices__left-table-element">Men's Cut</td><td>$20 + tax & up</td></tr>
+                                <tr><td class="prices__left-table-element">Children Under 12</td><td>based on consultation</td></tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="prices__table-section inner-section-top-margin">
+                        <h4 class="prices__table-title inner-subtitle">Colour Services</h4>
+                        <p class="prices__title-sub">Includes wash & style</p>
+                        <div class="table-responsive">
+                            <table class="prices__table table">
+                                <tr><td class="prices__left-table-element">Retouch</td><td>$50 + tax & up</td></tr>
+                                <tr><td class="prices__left-table-element">Retouch + Refresher</td><td>$70 + tax & up</td></tr>
+                                <tr><td class="prices__left-table-element">Highlights, Full Head</td><td>$120 + tax & up</td></tr>
+                                <tr><td class="prices__left-table-element">Highlights, Full (Babylights)</td><td>$135 + tax & up</td></tr>
+                                <tr><td class="prices__left-table-element">Highlights, Half Head</td><td>$90 + tax & up</td></tr>
+                                <tr><td class="prices__left-table-element">Highlights, Partial</td><td>$55 + tax & up</td></tr>
+                                <tr><td class="prices__left-table-element">Highlights, Individual</td><td>$10 + tax, each</td></tr>
+                                <tr><td class="prices__left-table-element">Colour Corrections</td><td>$100 + tax, per hour</td></tr>
+                                <tr><td class="prices__left-table-element">Toner</td><td>$10 extra  + tax</td></tr>
+                                <tr><td class="prices__left-table-element">Olaplex</td><td>20% extra on top of service</td></tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="prices__table-section">
+                        <h4 class="prices__table-title inner-subtitle inner-section-top-margin-mobile">Styles</h4>
+                        <div class="table-responsive">
+                            <table class="prices__table table">
+                                <tr><td class="prices__left-table-element">Wash & Style</td><td>$25 + tax & up</td></tr>
+                                <tr><td class="prices__left-table-element">Dry Style</td><td>$30 + tax & up</td></tr>
+                                <tr><td class="prices__left-table-element">Special Occasion Updos</td><td>$45 + tax & up</td></tr>
+                                <tr><td class="prices__left-table-element">Bridal Updos</td><td>based on consultation</td></tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="prices__table-section inner-section-top-margin">
+                        <h4 class="prices__table-title inner-subtitle">Chemical Texture Services</h4>
+                        <div class="table-response">
+                            <table class="prices__table table">
+                                <tr><td class="prices__left-table-element">Perm</td><td>$65 + tax & up</td></tr>
+                                <tr><td class="prices__left-table-element">Chemical Straightening</td><td>based on consultation</td></tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="prices__table-section inner-section-top-margin">
+                        <h4 class="prices__table-title inner-subtitle">Specials</h4>
+                        <div class="table-responsive">
+                            <table class="prices__table table">
+                                <tr><td class="prices__left-table-element">Retouch, Wash, Haircut, & Style</td><td>$65 + tax & up</td></tr>
+                                <tr><td class="prices__left-table-element">Full Colour, Wash, Cut & Style</td><td>$85 + tax & up</td></tr>
+                                <tr><td class="prices__left-table-element">Ten Minute Head Massage With Any Hair Service</td><td>$15 + tax</td></tr>
+                                <tr><td class="prices__left-table-element">Toner with Highlights</td><td>$10 + tax</td></tr>
+                                <tr><td class="prices__left-table-element">Tint</td><td>$8 + tax & up</td></tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <p class="prices__disclaimer mt-5">
+                        SERVICES THAT ARE NOT LISTED ARE BASED ON CONSULTATION. CONSULTATIONS ARE FREE AND YOU'RE ALWAYS WELCOME TO DISCUSS YOUR OPTIONS. WE APPRECIATE YOUR BUSINESS AND CONTINUED LOYALTY!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="book-with-us section-margin">
+        <div class="book-with-us__inner section-inner-restrict">
+            <h3 class="section-heading section-heading-bottom-margin-small-mobile">Book With Us</h3>
+            <div class="book-with-us__map-split-view">
+                <div class="row mt-4">
+                    <div class="col-12 col-md-6">
+                        <div class="book-with-us__text-section">
+                            <h4 class="book-with-us__sub-heading inner-subtitle">Address</h4>
+                            <p class="book-with-us__text">
+                                92 owen st. <br/>
+                                Barrie, ON <br/>
+                                L4M 3H5
+                            </p>
+                        </div>
+                        <div class="book-with-us__text-section inner-section-top-margin">
+                            <h4 class="book-with-us__sub-heading inner-subtitle">Contact Us</h4>
+                            <p class="book-with-us__text">
+                                705-881-4473 <br/>
+                                aandahairsalon@gmail.com <br/>
+                                Instagram: <a class="book-with-us__link" href="https://www.instagram.com/aandahair/">@aandahair</a> <br/>
+                                Facebook: <a class="book-with-us__link" href="https://www.facebook.com/aandahair">aandahair</a>
+                            </p>
+                        </div>
+                        <div class="book-with-us__text-section inner-section-top-margin">
+                            <h4 class="book-with-us__sub-heading inner-subtitle">Hours</h4>
+                            <div class="book-with-us__table-section">
+                                <div class="table-responsive">
+                                    <table class="hours-table table">
+                                        <tr><td class="hours-table__left-table-element">Sunday, Monday</td><td>CLOSED</td></tr>
+                                        <tr><td class="hours-table__left-table-element">Tuesday:</td><td>10AM - 7PM</td></tr>
+                                        <tr><td class="hours-table__left-table-element">Wednesday:</td><td>12PM - 8PM</td></tr>
+                                        <tr><td class="hours-table__left-table-element">Thursday:</td><td>10AM - 7PM</td></tr>
+                                        <tr><td class="hours-table__left-table-element">Friday:</td><td>9AM - 5PM</td></tr>
+                                        <tr><td class="hours-table__left-table-element">Saturday:</td><td>9AM - 3PM</td></tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 inner-section-top-margin-mobile">
+                        <iframe 
+                            height="600px" 
+                            width="100%" 
+                            border="0" 
+                            marginwidth="0" 
+                            marginheight="0" 
+                            src="https://mapquest.com/embed/canada/on/barrie/l4m-3h5/92-owen-st-44.393452,-79.688755?center=44.393300258584674,-79.68879461288452&zoom=14&maptype=map">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+    <section class="footer section-margin">
         <p>
-            Icons made by <a href="https://www.flaticon.com/authors/dave-gandy" title="Dave Gandy">Dave Gandy</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
+            © 2020 A&A Hair Salon <br>
+            Chevron icon made by <a href="https://www.flaticon.com/authors/dave-gandy" title="Dave Gandy">Dave Gandy</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com.</a>
         </p>
     </section>
 
     <!-- Scripts -->
+    <script src="jquery/jquery-3.5.1.min.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="js/scroll-to-title.js"></script>
 </body>
