@@ -6,18 +6,22 @@
   --sub-heading-size: 16px;
   --p-text-size-desktop: 14px;
   --disclaimer-text: 12px;
+  --main-title: 40px;
+  --subtitle: 18px;
 
   /* Mobile */
   --subtitle-size-mobile: 16px;
   --sub-heading-size-mobile: 14px;
   --p-text-size-mobile: 12px;
   --disclaimer-text-mobile: 10px;
+  --main-title-mobile: 25px;
+  --subtitle-mobile: 16px;
 
   /* Element sizing */
   --def-line-height: 30px;
   --footer-line-height: 16px;
 
-  /*colors*/
+  /* Colors */
   --main-dark: #212529;
   --inverse-text: #ffffff;
 }
@@ -119,6 +123,37 @@ a.hover {
   }
 }
 
+/* nav */
+section.warning-nav {
+  top: 0;
+  position: -webkit-sticky;
+  position: sticky;
+  width: 100%;
+  height: 40px;
+  background-color: red;
+}
+
+section.warning-nav:hover {
+  cursor: pointer;
+}
+
+section.warning-nav:hover a {
+  text-decoration: none;
+}
+
+section.warning-nav .content {
+  text-align: center;
+  color: white;
+  font-size: var(--disclaimer-text);
+  margin-top: 5px;
+}
+
+@media (max-width: 767px) {
+  section.warning-nav .content {
+    font-size: var(--disclaimer-text-mobile);
+  }
+}
+
 /* Footer */
 section.footer {
   height: 80px;
@@ -165,16 +200,22 @@ section.footer a:hover {
 #main-title {
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
-  font-size: 40px;
+  font-size: var(--main-title);
+}
+
+@media (max-width: 767px) {
+  #main-title {
+    font-size: var(--main-title-mobile);
+  }
 }
 
 #subtitle {
-  font-size: 18px;
+  font-size: var(--subtitle);
 }
 
 @media (max-width: 767px) {
   #subtitle {
-    font-size: 16px;
+    font-size: var(--subtitle-mobile);
   }
 }
 
