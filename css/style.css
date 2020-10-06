@@ -133,6 +133,10 @@ section.warning-nav {
   background-color: red;
 }
 
+section.warning-nav .row {
+  margin: 0px;
+}
+
 section.warning-nav:hover {
   cursor: pointer;
 }
