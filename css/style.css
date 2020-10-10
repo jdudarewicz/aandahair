@@ -51,12 +51,14 @@ p {
 }
 
 a,
-a:hover {
+a:hover,
+a.covid:hover {
   color: skyblue !important;
   text-decoration: none !important;
 }
 
 a.covid {
+  font-weight: normal;
   color: black !important;
 }
 
@@ -223,6 +225,7 @@ section.footer a:hover {
 }
 
 .covid-notif {
+  font-weight: bold;
   color: red;
 }
 
